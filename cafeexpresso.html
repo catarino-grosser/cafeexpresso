@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="author" content="Catarino Grosser Ferreira">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link rel="stylesheet" href="https://catarinowebstudio.w3spaces.com/layoutCWS-alpha-V-0.0.1.css?bypass-cache=1632364949">
+ <title>Modelo Café Expresso</title>
+  <style>
+    /* layout CWS_alpha v.0.0.1 */
+    /* layout RESPONSIVO modelo CWS_alpha v.0.0.1 */
+*{box-sizing: border-box; padding: 0; margin: 0;}
+header {width: 100%; height: 640px;background-size: cover;background-position:left;}
+nav{position: fixed;align-items: center;height: auto;padding: 20px 0;}
+nav, .produtos-servicos {display: flex;width: 100%;}
+.logo {width:60%; padding: 4px;;margin:auto 3%;text-align: center;}
+a{padding: 5px;text-transform: uppercase; text-decoration: none;}
+nav .menu {width: 40%;}
+nav .menu .menu-desktop {display: flex; justify-content:space-around; }
+nav .menu .menu-desktop a {padding: 8px;width: 110px; text-align: center;}
+nav .menu .menuMobile{width:110px;margin:auto; margin-right:6%;}
+.btn-menu-mobile{font-size: 30px;}
+nav .menu .btn-menu-mobile {display: none;position: relative;}
+.btnCloseMenu{font-size: 15px;}
+.btn-menu-mobile,.btnCloseMenu,.btnEnviar{width: 110px;height: 40px; text-align: center;align-items: center;}
+#contMenuMobile{display: none;width:110px;height: max-content;position:absolute;z-index:1;}
+.link-c-m-m{text-align:center;width: 100%;display: block; padding: 9px;margin-top: 26px;}
+.apresentacao,.slogan,.cont-pedido-contato,.pedido-contato,footer,.cont-col,h2,h3,h4,h5,h6
+  {text-align: center;padding: 25px 6%;margin:2% 1%;}
+.coluna {width: 32%; margin:1% auto;}
+footer {align-items: center;}
+.fotoProduto{height: 220px; width: 70%;}
+.capa{ width:96%;border-radius:20px;margin:3% auto;}
+.disable{display: none;}
+button{border: none;font-size: 24px;}
+form{width:max-content; margin: auto;padding: 3%;}
+input{display: block;margin: 6% auto;}
+.ghost{height: 320px;width:auto;text-align: center;}
+p{margin-top: 5px;margin-bottom: 5px;}
+@media only screen and (max-width: 900px) {
+  nav .menu .menu-desktop{display: none;}
+  nav .menu .btn-menu-mobile{display: inline-block;}
+  .coluna{width: 47%;}
+  .produtos-servicos{flex-wrap: wrap;}
+}
+@media only screen and (max-width: 600px){
+  .produtos-servicos{display: block;}
+  .apresentacao,.slogam,.coluna,.pedido-contato{width: 94%; margin:6% auto;}
+}
+/*  Fim do layout CWS-Alpha-v 0.0.1 */
+          
+    /* estilo CWS modelo café expresso - */
+    header{background-image: url("./imagens/banner.jpg");}
+    .coluna,.menu a,.apresentacao,.titulo-secao,.slogan, nav,.pedido-contato,footer,.btn-menu-mobile,form,.logo,.capa
+    { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);}
+    .titulo-secao,.slogan,.pedido-contato,.btn-menu-mobile,.btnEnviar,.logo,
+    .btnCloseMenu,.menu a
+    {background-color:rgb(80, 45, 21);color: tan;border-radius: 20px;}
+    .apresentacao,.coluna,footer{background-color:tan;color: rgb(98, 56, 25);border-radius: 20px;}
+    .banner{display:flex;} 
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h1>Café Expresso</h1>
+    </div>
+    <div class="menu">
+      <div class="menu-desktop">
+        <a href="#">home</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </div>
+      <div class="menuMobile">
+        <div id="contMenuMobile">
+          <button class="btnCloseMenu" onclick="document.getElementById('contMenuMobile').style.display = 'none'">&#9587</button>
+          <a class="link-c-m-m" href="#">home</a>
+          <a class="link-c-m-m" href="#">link</a>
+          <a class="link-c-m-m" href="#">link</a>
+        </div> 
+        <button class="btn-menu-mobile "onclick="document.getElementById('contMenuMobile').style.display = 'block'">&#9776</button>
+      </div>
+    </div>
+ </nav>
+ 
+ <header>
+  <!-- banner img -->
+ </header>
+ <main>
+  <section class="apresentacao">
+   <h3>Apresentação!</h3>
+   <p>texto apresentação Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos. Reprehenderit
+    sequi eum dignissimos non quo error inventore obcaecati cupiditate, vel magni sapiente ea unde velit nobis
+    similique consequatur doloremque.
+   </p>
+  </section>
+  <section class="slogan">
+    <h2>slogan!</h2>
+    <h3>subtitulo do slogan!</h3>
+    <p>Conteudo ou descriçao do eslogan.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, asperiores facere omnis harum ad magni
+       doloremque ratione accusantium voluptas unde aspernatur, fuga impedit? Totam accusamus sequi alias, libero 
+       ad sit!
+    </p>
+  </section>
+  <section class="produtos-servicos">
+    <div class="coluna col-A">
+     <div class="cont-col">
+      <article class="item-produto">
+        <h3>Expresso</h3>
+        <img class="fotoProduto" src="./imagens/expresso.jpg" alt="foto produto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis eum suscipit nemo ab asperiores ducimus
+         eligendi temporibus exercitationem atque architecto excepturi, fugiat, qui saepe sunt dolor, minus nostrum
+         </p>
+      </article>
+     </div>
+    </div>
+    <div class="coluna col-B">
+      <div class="cont-col">
+        <article class="item-produto">
+        <h3>Expresso com Creme</h3>
+        <img class="fotoProduto" src="./imagens/expComCreme.jpg" alt="foto produto">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis eum suscipit nemo ab asperiores ducimus
+           eligendi temporibus exercitationem atque architecto excepturi, fugiat, qui saepe sunt dolor, minus nostrum
+           sequi!
+          </p>
+        </article>
+      </div>
+    </div>
+    <div class="coluna col-C">
+      <div class="cont-col">
+        <article class="item-produto">
+        <h3>Capuccino</h3>
+        <img class="fotoProduto" src="./imagens/capuccino.jpg" alt="foto produto">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis eum suscipit nemo ab asperiores ducimus
+           eligendi temporibus exercitationem atque architecto excepturi, minus nostrum
+           sequi!
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="pedido-contato">
+    <article class="cont-pedido-contato">
+      <h3>Contato Reservas Pedidos </h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id suscipit, omnis perferendis optio dolore
+       voluptatum quod, odit consectetur
+       molestias mollitia dolorum dicta veritatis. Possimus omnis reiciendis exercitationem nihil ad voluptas.
+      </p>
+     </article>
+     <form action="mailto:angelagrosser@hotmail.com" method="post">
+      <input type="text" name="nomeCliente" id="NomeCliente" placeholder="Digite seu Nome">
+      <input type="email" name="emailCliente" id="e-mail" placeholder="Digite seu e-mail">
+      <input type="submit" value="enviar" class="btnEnviar">
+    </form>
+  </section>
+ </main>
+ <div class="banner">
+  <img src="./imagens/cafetodahora.png" class="capa">
+ </div>
+ <footer>
+  <p>&copy; 2021 | <a href="https://catarinowebstudio.w3spaces.com">CatarinoWebStudio</a></p>
+ </footer>
+</body>
+</html>
